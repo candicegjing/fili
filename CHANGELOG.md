@@ -9,6 +9,8 @@ Current
 -------
 ### Added:
 
+- [Add partition availability and table](https://github.com/yahoo/fili/pull/244)
+
 - [Add constructor to specify DruidDimensionLoader dimensions directly](https://github.com/yahoo/fili/pull/191)
 
 - [Add `IntervalUtils::getTimeGrain` to determine the grain given an Interval](https://github.com/yahoo/fili/pull/191)
@@ -91,6 +93,10 @@ Current
 - [Support timeouts for lucene search provider](https://github.com/yahoo/fili/pull/183)
 
 ### Changed:
+
+- [Update availabilities for PartitionAvailability](https://github.com/yahoo/fili/pull/244)
+    * Created `BaseCompositeAvailability` for common features
+    * Refactored `DataSourceMetadataService` methods to use SimplifiedIntervaList to standardize intersections
 
 - [Refactor Physical Table Definition and Update Table Loader](https://github.com/yahoo/fili/pull/207)
     * `PhysicalTableDefinition` is now an abstract class, construct using `ConcretePhysicalTableDefinition` instead
